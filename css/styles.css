@@ -1,0 +1,129 @@
+.root {
+    --font-accent: 'Seymour One', sans-serif;
+    --bcg-primary:#84A178;
+    --bcg-second: #817C7C;
+    --bcg-third: #AEC6A5;
+    --bcg-fourth: #9CBE8F;
+    --bcg-fon: #D9D9D9;
+    --color-yellow: #F8D24E;
+    --second-yellow: #EFD478;
+    --color-black: #131313;
+    --color-white: #FCFCFC;
+
+}
+
+.page {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+    color: var(--color-black);
+
+    letter-spacing: 0.04em;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    @media screen and (min-width:768px){
+          width: 768px;
+        }
+    @media screen and (min-width:1200px){
+              width: 1200px;
+        }
+    }
+
+    .header-mobile__logo { 
+        display: none;
+      }
+      
+      @media screen and (max-width: 768px) {
+      
+          .header-mobile__logo { 
+            display: inline-block; 
+          }
+      
+         .header-desctop__logo {
+            display:none;
+         }
+      }
+    
+      .header-container {
+        display: flex;
+        align-items: center;
+        background-color: var(--bcg-primary);
+      }
+    
+      .header__nav {
+        display: none;
+        @media screen and(min-width: 768px){
+          display: flex;
+          align-items: baseline;
+        }
+          
+        @media screen and(min-width: 1200px) {
+          display: flex;
+          align-items: center;
+          // margin-left: 93px;
+        }
+      }
+    
+      .site-nav {
+        @media screen and(min-width: 768px){
+          display: flex;
+          justify-content: space-evenly;
+        }
+          
+        @media screen and(min-width: 1200px) {
+          display: flex;
+        }
+      }
+    
+      .site-nav__item {
+        @media screen and(min-width: 768px) {
+          margin-bottom: 10px;
+        }
+    }
+
+        .site-nav__item:last-child {
+            margin-bottom: 0;
+
+        @media screen and(min-width: 1200px) {
+          margin-right: 28px;
+          margin-bottom: 0; 
+      }
+    }
+
+      .site-nav__item:last-child {
+        margin-right: 0;
+      }
+    
+      .site-nav__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 13px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        font-style: normal;
+    
+        color: var(--color-white);
+        transition: color var(--transition-duration) var(--transition-timing-function);  
+
+    }
+
+    .site-nav__link:hover,
+    .site-nav__link:focus {
+      color: var(--color-black);
+  }
+
