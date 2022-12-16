@@ -14,9 +14,9 @@
 <body>
     <header>
         <div class="container header-container">
-            <img src="" class="header-mobile__logo" alt="ice-cream logo">
-            <img src="" class="header-desctop__logo" alt="ice-cream logo">
-            <nav class="header__nav">
+            <img src="./img/logo/logo-mob.png" width="44" heigth="48" class="header-mobile__logo" alt="ice-cream logo mob">
+            <img src="./img/logo/logo-desk.png" width="60" heigth="65" class="header-desctop__logo" alt="ice-cream logo desk">
+              <nav class="header__nav">
                 <ul class="site-nav list">
                   <li class="site-nav__item">
                     <a href="../index.html" class=" link site-nav__link site-nav__link-current">Home</a>
@@ -32,13 +32,18 @@
                   </li>
                 </ul>
               </nav>
-            <button class="header__button">Buy now</button>
-
-            <button type="button" class="menu-open-btn" data-menu-open>
-              <svg width="32" height="32">
-                <use href="./img/header-sprites.svg#icon-eva_menu-fill-1"></use>
-              </svg>
-            </button>
+              <div class="header__content">
+                
+              <button class="header__button site-nav__button">Buy now</button>
+                
+                <button type="button" class="menu-open-btn" data-menu-open>
+                  <svg width="32" height="32">
+                    <use href="./img/header-sprites.svg#icon-eva_menu-fill-1"></use>
+                  </svg>
+                </button>
+            
+              </div>
+              
           </div>
 
             <div class="mob-menu" data-menu>
@@ -46,9 +51,9 @@
                 <div class="mob-menu__top">
                   <button class="mob-menu-close-btn" type="button" data-menu-close>
                     <svg width="32" height="32">
-                      <use href="./img/header-sprites.svg#icon-ep_close-1"></use></svg>
+                      <use href="./img/symbol-defs.svg#icon-ep_close-1"></use></svg>
                   </button>
-                  <ul class="mob-nav">
+                  <ul class="mob-nav list">
                     <li class="mob-nav__item">
                       <a class="mob-nav__link mob-nav__link--current link" href="./index.html">Home</a>
                     </li>
@@ -59,13 +64,14 @@
                       <a class="mob-nav__link link" href="#">Our products</a>
                     </li>
                     <li class="mob-nav__item">
-                      <a class="mob-nav__link link" href="#">Contact</a>
+                      <a class="mob-nav__link mob-nav__contact link" href="#">Contact</a>
                     </li>
                   </ul>
+                  <button class="header-mob__button header__button">Buy now</button>
                 </div>
-                  <button class="header__button header-mob__button">Buy now</button>
-                </div>
+              </div> 
         </div>
+      </div>
     </header>
 
     <main>
